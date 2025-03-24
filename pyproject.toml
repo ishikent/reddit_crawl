@@ -1,0 +1,22 @@
+[project]
+name = "reddit-crawl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "praw>=7.8.1",
+]
+
+[tool.uv.sources]
+praw = { url = "https://github.com/praw-dev/praw/archive/main.zip" }
+
+
+# pyproject.toml
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"
+
+
+[project.scripts]
+rtd = "reddit-crawl.reddit_thread_dumper:main"  # コマンド名:実行関数
