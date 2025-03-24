@@ -11,12 +11,5 @@ dependencies = [
 [tool.uv.sources]
 praw = { url = "https://github.com/praw-dev/praw/archive/main.zip" }
 
-
-# pyproject.toml
-[build-system]
-requires = ["uv"]
-build-backend = "uv.build"
-
-
 [project.scripts]
-rtd = "reddit-crawl.reddit_thread_dumper:main"  # コマンド名:実行関数
+rtd = "reddit_crawl.reddit_thread_dumper:main"  # Command name: execution function

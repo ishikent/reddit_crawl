@@ -1,3 +1,18 @@
 .aider*
 .python-version
 uv.lock
+
+# ビルド成果物
+dist/
+
+# Python パッケージのメタデータ
+reddit_crawl.egg-info/
+
+# Python コンパイル済みファイル
+__pycache__/
+
+# その他無視したいファイル
+*.log
+*.bak
+*.swp
+
